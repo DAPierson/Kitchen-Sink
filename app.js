@@ -3,31 +3,65 @@ const states = 50;
 let addition = 5 + 4;
 
 
-if ( myName.charCodeAt(0) >= 76){
-alert("Back of the line!")
+if (myName.charCodeAt(0) >= 76) {
+    alert("Back of the line!")
 }
 else {
-    alert("Next")
+    alert("Next");
 }
 
 function sayHello() {
     alert("Hello World!")
 }
-sayHello()
+sayHello();
 
 function checkAge(name, age) {
     if (age < 21) {
         alert('Sorry ' + name + ', you aren\'t old enough to view this page!')
     }
 }
-checkAge("Charles", 21)
-checkAge("Abby", 27)
-checkAge("James", 18)
-checkAge("John", 17)
+checkAge("Charles", 21);
+checkAge("Abby", 27);
+checkAge("James", 18);
+checkAge("John", 17);
 
-let myVegets = ["Beans","Corn","Other"];
-for(let item of myVegets){
-    console.log(item)
+let myVegets = ["Beans", "Corn", "Other"];
+for (let item of myVegets) {
+    console.log(item);
 }
+
+let person = [
+{
+    name: 'John',
+    age: 19,
+},
+{
+    name: 'Dustin',
+    age: 32,
+},
+{
+    name: 'Alysia',
+    age: 28,
+},
+{
+    name: 'William',
+    age: 1,
+},
+{
+    name: 'Paul',
+    age: 45,
+}
+];
+
+
+for (let i = 0; i < person.length; i++){
+   checkAge(person[i].name,person[i].age)
+}
+    
+   
+
+
+
+ 
 
 
