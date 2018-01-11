@@ -31,37 +31,52 @@ for (let item of myVegets) {
 }
 
 let person = [
-{
-    name: 'John',
-    age: 19,
-},
-{
-    name: 'Dustin',
-    age: 32,
-},
-{
-    name: 'Alysia',
-    age: 28,
-},
-{
-    name: 'William',
-    age: 1,
-},
-{
-    name: 'Paul',
-    age: 45,
-}
+    {
+        name: 'John',
+        age: 19,
+    },
+    {
+        name: 'Dustin',
+        age: 32,
+    },
+    {
+        name: 'Alysia',
+        age: 28,
+    },
+    {
+        name: 'William',
+        age: 1,
+    },
+    {
+        name: 'Paul',
+        age: 45,
+    }
 ];
 
 
-for (let i = 0; i < person.length; i++){
-   checkAge(person[i].name,person[i].age)
+for (let i = 0; i < person.length; i++) {
+    checkAge(person[i].name, person[i].age)
 }
-    
-   
+
+function getLength(word) {
+    let len = word.length;
+    return len;
+}
+
+var stringLen = getLength('Hello World');
+
+if (stringLen % 2 === 0) {
+    let msg = 'The world is nice and even!';
+    console.log(msg);
+} else {
+    let msg2 = 'The world is an odd place!';
+    console.log(msg2);
+}
 
 
 
- 
+
+
+
 
 
