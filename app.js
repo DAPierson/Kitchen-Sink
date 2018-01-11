@@ -18,6 +18,7 @@ sayHello();
 function checkAge(name, age) {
     if (age < 21) {
         alert('Sorry ' + name + ', you aren\'t old enough to view this page!')
+    // alternative -- `sorry ${name} , you aren't old enough to view this page!`
     }
 }
 checkAge("Charles", 21);
@@ -56,14 +57,17 @@ let person = [
 
 for (let i = 0; i < person.length; i++) {
     checkAge(person[i].name, person[i].age)
+// alternative -- create var -- let friend = friend[i] 
+// Important if using friends[i] in multiple instances 
 }
+
 
 function getLength(word) {
     let len = word.length;
     return len;
 }
 
-var stringLen = getLength('Hello World');
+let stringLen = getLength('Hello World');
 
 if (stringLen % 2 === 0) {
     let msg = 'The world is nice and even!';
