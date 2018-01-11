@@ -2,7 +2,7 @@ let myName = "Dustin";
 const states = 50;
 let addition = 5 + 4;
 
-
+// Checking if D's charcode is >= L's charcode.
 if (myName.charCodeAt(0) >= 76) {
     alert("Back of the line!")
 }
